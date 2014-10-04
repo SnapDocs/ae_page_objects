@@ -10,5 +10,13 @@ if RUBY_VERSION != '1.8.7'
   appraise "capybara-2.2-ruby#{RUBY_VERSION}" do
     gem 'capybara', '~> 2.2.0'
   end
+
+  appraise "capybara-2.3-ruby#{RUBY_VERSION}" do
+    gem 'capybara', '~> 2.3.0'
+  end
+
+  appraise "capybara-2.4-ruby#{RUBY_VERSION}" do
+    gem 'capybara', '~> 2.4.0'
+  end
 end
 

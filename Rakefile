@@ -32,6 +32,10 @@ class SeleniumRunner
     remove_files("test/test_apps/**/gemfiles/*.lock")
   end
 
+  def clean_gemfiles
+    remove_files("test/test_apps/**/gemfiles/*")
+  end
+
   def install_all
     @matrix.values.each do |test_configs|
       test_configs.each do |test_config|
@@ -177,6 +181,10 @@ namespace :test do
 
       task :clean do
         selenium_runner.clean
+      end
+
+      task :clean_gemfiles do
+        selenium_runner.clean_gemfiles
       end
     end
 

@@ -7,10 +7,3 @@ gem 'gem-release'
 gem 'test-unit'
 
 gemspec
-
-if RUBY_VERSION =~ /\A1\.8/
-  gem 'capybara', '~> 1.1.4'
-  gem "nokogiri", "< 1.6.0"
-  gem 'rubyzip', '< 1.0.0'
-  gem 'mime-types', '< 2'
-end
